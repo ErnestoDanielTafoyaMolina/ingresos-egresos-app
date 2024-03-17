@@ -90,7 +90,7 @@ form {
     justify-content: center;
     background-color: aquamarine;
 }
-thead > tr {
+/* thead > tr {
     display: flex;
     justify-content: space-between;
     gap: 1em;
@@ -99,4 +99,4 @@ tbody > tr {
     display: flex;
     justify-content: space-between;
     gap: 1em;
-}
+} */

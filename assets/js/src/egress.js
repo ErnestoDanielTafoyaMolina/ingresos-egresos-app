@@ -23,16 +23,25 @@ function egreses () {
                     <td>${egress.date}</td>
                     <td>${egress.description}</td>
                     <td>${egress.amount}</td>
-                    <td><button onclick="deleteEgress(${index})">Eliminar</button></td>
+                    <td><button class="delete-egress" value="${index}">Eliminar</button></td>
                 </tr>
             `;
             tbody.innerHTML += row;
         });
+        const deleteBtn = document.querySelectorAll(".delete-egress");
+        deleteBtn.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                const index = e.target.value;
+                deleteEgress(index);
+                UpdateRevenueAmount();
+            });
+        });
 
     };
     const UpdateEgressAmount = () => {
+        const egressValue = document.getElementById('egress-value')
         const totalEgresos = egresses.reduce((total, egreso) => total + egreso.monto, 0);
-        document.getElementById('egress').value = totalEgresos;
+        egressValue.value = totalEgresos;
     
     };
 

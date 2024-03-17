@@ -18,7 +18,7 @@
                 <section class="ingreso">
                     <div class="revenue-title">
                         <h2>Ingresos</h2>
-                        <input type="number" min="0" name="revenue" id="revenue" value="0" readonly>
+                        <input type="number" min="0" name="revenue" id="revenue-value" value="0" readonly>
                     </div>
                     <form action="" class="revenue-form">
         
@@ -47,7 +47,7 @@
                                     <th>Fecha</th>
                                     <th>Descripción</th>
                                     <th>Monto</th>
-                                    <th>Acciones</th> <!--Botones de eliminar y editar-->
+                                    <th></th> <!--Botones de eliminar y editar-->
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -59,7 +59,7 @@
                 <section class="egreso">
                     <div class="egress-title">
                         <h2>Egresos</h2>
-                        <input type="number" min="0" name="egress" id="egress" value="0" readonly>    
+                        <input type="number" min=0 name="egress" id="egress-value" value=0 readonly>    
                     </div>
                     <form action="" class="egress-form">
         
@@ -87,7 +87,7 @@
                                     <th>Fecha</th>
                                     <th>Descripción</th>
                                     <th>Monto</th>
-                                    <th>Acciones</th> <!--Botones de eliminar y editar-->
+                                    <th></th> <!--Botones de eliminar y editar-->
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -100,6 +100,6 @@
             <p>&copy; 2020 - Ingresos y egresos
         </footer>
     </div>
-    <script type="module" src="./assets/js/index.js"></script>
+    <script defer type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
