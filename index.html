@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Ingresos y egresos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>Ingresos y egresos</h1>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section class="ingreso">
+                    <div class="revenue-title">
+                        <h2>Ingresos</h2>
+                        <input type="number" min="0" name="revenue" id="revenue" value="0" readonly>
+                    </div>
+                    <form action="" class="revenue-form">
+        
+                        <div class="input">
+                            <label for="date-revenue">Fecha</label>
+                            <input type="date" name="date-revenue" id="date-revenue" required>
+                        </div>
+    
+                        <div class="input">
+                            <label for="description-revenue">Descripcion</label>
+                            <input type="text" name="description-revenue" id="description-revenue" required>
+                        </div>
+                        <div class="input">
+                            <label for="date-revenue">Monto</label>
+                            <input type="number" min="0" name="amount-revenue" id="amount-revenue" required>
+                        </div>
+        
+                        <button class="revenue-btn">Añadir Ingreso</button>
+                    </form>
+                </section>
+                <section class="table">
+                    <div id="revenue-list">
+                        <table id="revenue-table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Descripción</th>
+                                    <th>Monto</th>
+                                    <th>Acciones</th> <!--Botones de eliminar y editar-->
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <section class="egreso">
+                    <div class="egress-title">
+                        <h2>Egresos</h2>
+                        <input type="number" min="0" name="egress" id="egress" value="0" readonly>    
+                    </div>
+                    <form action="" class="egress-form">
+        
+                        <div class="input">
+                            <label for="date-egress">Fecha</label>
+                            <input type="date" name="date-egress" id="date-egress" required>
+                        </div>
+    
+                        <div class="input">
+                            <label for="description-egress">Descripcion</label>
+                            <input type="text" name="description-egress" id="description-egress" required>
+                        </div>
+                        <div class="input">
+                            <label for="date-egress">Monto</label>
+                            <input type="number" min="0" name="amount-egress" id="amount-egress" required>
+                        </div>
+                        <button class="egress-btn">Añadir Egreso</button>
+                    </form>
+                </section>
+                <section class="table">
+                    <div id="revenue-list">
+                        <table id="egress-table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Descripción</th>
+                                    <th>Monto</th>
+                                    <th>Acciones</th> <!--Botones de eliminar y editar-->
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2020 - Ingresos y egresos
+        </footer>
+    </div>
+    <script type="module" src="./assets/js/index.js"></script>
+</body>
+</html>
